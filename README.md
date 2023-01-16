@@ -17,3 +17,16 @@ There are five files and an image:
 * A `db.json` file: contains a collection of 6 objects with 5 attributes.
 * An `design.css` file: contains the codes used to achieve the aesthetics of the web app.
 * An image `COURSECODE.png`: which is the logo for the web app.
+
+
+## Deliverables
+* As a user, I should see the current date and time at the top right corner of the web app.
+* As a user, I should see the countdown clock to when classes begin. 
+* As a user, I should be able to type my name, phone number, and email into their respective input fields.
+* As a user, I should be able to select a course I am interested in learning, among a variety of options.
+* As a user, after inputing my details, I should be able to click a register button.
+* As a user, I expect to see the name, description, duration and tuition of the courses provided.  
+* As a user, I should be able to input a review, if I wish to.
+* As a user, I should be able to click on a submit button after inputing my review.
+* As a user, I expect to see my review appear after I click the submit button.
+* As a user, I should be able to delete my review, if I wish to. 
