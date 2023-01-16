@@ -68,7 +68,7 @@ header > h1 {
 
 
 /* Styles for the Countdown Clock */
-div#countdown {
+div#countDown {
     width: 100%;
     display: -webkit-flex;
     display: flex;
@@ -77,7 +77,7 @@ div#countdown {
     margin-top: 10px;
  }
 
-div#countdown div {
+div#countDown div {
     display: block;
     text-align: center;
     width: 100%;
@@ -91,7 +91,7 @@ div#countdown div {
     color: white;
  }
 
-div#countdown div span {
+div#countDown div span {
     font-size: 2em;   
  }
 
