@@ -42,3 +42,15 @@ let form = document.getElementById("create_reviews")
         form.reset()
     })
 })
+
+
+// Create a function for reviews with a delete button with an event listener
+function inputReviews(review){
+    let li = document.createElement('li')
+    let btn = document.createElement('button')
+    btn.addEventListener('click', handleDelete)
+    btn.textContent = 'x' 
+    li.textContent = `${review} `    
+    li.appendChild(btn)
+    document.querySelector('#reviews').appendChild(li)
+ }
