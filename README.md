@@ -52,3 +52,8 @@ There are five files and an image:
 * As a user, I should be able to click on a submit button after inputing my review.
 * As a user, I expect to see my review appear after I click the submit button.
 * As a user, I should be able to delete my review, if I wish to. 
+
+
+## Conclusion
+
+That's it! I hope you love my Course Code Web App!
