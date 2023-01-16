@@ -30,4 +30,10 @@ function showRemaining() {
 
     /* Display the current date and time */
     document.getElementById("currentTime").innerHTML = localDate + "<br />" + localTime;
+
+    /* Display the time left until March 31st, 2023; 10:01 am */
+    document.getElementById('daysLeft').innerHTML = days + 'days ';
+    document.getElementById('hoursLeft').innerHTML = hours + 'hours ';
+    document.getElementById('minsLeft').innerHTML = minutes + 'mins ';
+    document.getElementById('secsLeft').innerHTML = seconds + 'secs';
 }
