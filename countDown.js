@@ -27,4 +27,7 @@ function showRemaining() {
     /* Store the current date and time */
     const localDate = currentDate.toLocaleDateString();
     const localTime = currentDate.toLocaleTimeString();
+
+    /* Display the current date and time */
+    document.getElementById("currentTime").innerHTML = localDate + "<br />" + localTime;
 }
