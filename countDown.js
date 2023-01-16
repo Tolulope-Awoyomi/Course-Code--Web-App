@@ -37,3 +37,6 @@ function showRemaining() {
     document.getElementById('minsLeft').innerHTML = minutes + 'mins ';
     document.getElementById('secsLeft').innerHTML = seconds + 'secs';
 }
+
+/* Assign a value to the timer variable and execute the function to run and display the countdown clock*/
+timer = setInterval(showRemaining, 1000);
