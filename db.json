@@ -13,6 +13,20 @@
             "description": "It is a high-level coding language that runs on lots of platforms. It is popular because of its simplicity and emphasis on clear syntax.",
             "duration": "2 months",
             "tuition": "$1600"
+        },
+        {
+            "name": "PHP",
+            "image": "https://images.unsplash.com/photo-1535551951406-a19828b0a76b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVhcm4lMjBwaHB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            "description": "PHP serves as the link between the database (which stores data produced to your web app or website), and the HTML that displays the stored data.",
+            "duration": "2 months",
+            "tuition": "$1600"
+        },
+        {
+            "name": "C++",
+            "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVhcm4lMjBjJTJCJTJCJTIwY29kZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "description":"It is an updated and enhanced version of the C coding language. It included object-orientation to C, hence the reason it is called C++. Majority of computer games are written in this language.",
+            "duration": "3 months",
+            "tuition": "$1800"
         }
     ]
 }
