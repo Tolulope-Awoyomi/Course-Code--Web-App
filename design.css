@@ -23,3 +23,19 @@ body {
  ul, ol {
     list-style: none;
  }
+
+
+/* HTML and Body styles */
+html {
+    background: linear-gradient(to bottom,#e9e0c9, rgb(122, 20, 255),#e9e0c9);
+    font-family: Verdana, Geneva, sans-serif;
+    min-height: 100%;
+ }
+
+ body { 
+    margin: 0px auto;
+    min-width: 340px;
+    max-width: 1020px;  
+    width: 100%;
+    min-height: 100%;
+ }
