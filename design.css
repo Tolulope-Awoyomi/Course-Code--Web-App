@@ -148,4 +148,29 @@ section h2 {
  
 section p, form {
     margin: 20px;
+}
+
+
+/* Page footer styles */
+footer {
+    clear: left;
+    display: block;
  }
+ 
+footer address {
+    display: block;
+    font-style: normal;
+    text-align: center;
+    font-size: 0.5em;
+    line-height: 9px;
+    height: 10px;
+    color: black;
+    font-family: sans-serif
+ }
+
+footer address p {
+    color: white;
+    font-family: sans-serif;
+    background-color: rgb(60, 0, 137);
+ }
+ 
