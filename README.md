@@ -9,6 +9,27 @@ Each of the event listener has its own unique callback function.
 This app also implements at least one instance of array iteration using the map array method. 
 
 
+## Instructions on how to clone and get the app running on someone else's computer
+* Open your terminal and cd into this folder's directory
+* Then type in the below code into your terminal:
+                json-server --watch db.json
+* Afterwards, you should see this:
+\{^_^}/ hi!
+
+  Loading db.json
+  Done
+
+  Resources
+  http://localhost:3000/courses
+
+  Home
+  http://localhost:3000
+
+  Type s + enter at any time to create a snapshot of the database
+  Watching...
+* Once you see the above, you are good to go! Load the html file into your browser and you should be able to view Course Code Web App and all its functionalities!
+
+
 ## Structuring My Code
 There are five files and an image:
 * An `index.html` file: contains the basic text of the app. 
