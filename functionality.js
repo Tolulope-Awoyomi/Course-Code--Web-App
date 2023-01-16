@@ -54,3 +54,8 @@ function inputReviews(review){
     li.appendChild(btn)
     document.querySelector('#reviews').appendChild(li)
  }
+
+ // Create a function to delete the reviews
+function handleDelete(e) {
+    e.target.parentNode.remove()
+}
