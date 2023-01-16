@@ -25,3 +25,20 @@ function fetchData () {
     });
 }
 fetchData()
+
+
+// Add two event listeners to the register and input forms 
+document.addEventListener("DOMContentLoaded", ()=> {
+    let registerForm = document.getElementById("registerForm")
+    registerForm.addEventListener("submit", (e) => {
+        e.preventDefault()
+        alert("You have succesfully registered! You should receive an email soon.")
+        registerForm.reset()
+})
+let form = document.getElementById("create_reviews")
+    form.addEventListener("submit", (e) => {
+        e.preventDefault()
+        inputReviews(e.target.review.value)
+        form.reset()
+    })
+})
