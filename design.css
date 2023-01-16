@@ -94,3 +94,25 @@ div#countdown div {
 div#countdown div span {
     font-size: 2em;   
  }
+
+
+/* Time Clock Styles */
+div#currentTime {
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 55px;   
+    background-color: transparent;
+    border: hidden;
+    color: rgba(255, 82, 192, 0.8);
+    width: 140px;
+    font-size: 1.1em;
+    line-height: 1.1em;
+    font-family: sans-serif;
+    font-weight: normal;
+ }
+
+div#currentTime span {
+    display: block;
+    width: 100%;
+ }
