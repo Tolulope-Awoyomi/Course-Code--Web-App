@@ -23,4 +23,8 @@ function showRemaining() {
     const hours = Math.floor((difference % dDay) / dHour);
     const minutes = Math.floor((difference % dHour) / dMinute);
     const seconds = Math.floor((difference % dMinute) / dSecond);
+
+    /* Store the current date and time */
+    const localDate = currentDate.toLocaleDateString();
+    const localTime = currentDate.toLocaleTimeString();
 }
