@@ -11,10 +11,11 @@ This app also implements at least one instance of array iteration using the map 
 
 ## Instructions on how to clone and get the app running on someone else's computer
 * Open your terminal and cd into this folder's directory
-* Then type in the below code into your terminal:
+* Then type in this into your terminal:
                 json-server --watch db.json
 * Afterwards, you should see this:
-\{^_^}/ hi!
+
+    \{^_^}/ hi!
 
   Loading db.json
   Done
