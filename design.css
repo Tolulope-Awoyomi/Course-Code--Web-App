@@ -65,3 +65,32 @@ header > h1 {
     font-weight: normal;
     color: rgba(255, 0, 192, 0.7);
  }
+
+
+/* Styles for the Countdown Clock */
+div#countdown {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+ }
+
+div#countdown div {
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5em;
+    font-size: 0.5em;
+    font-family: segment14, sans-serif;
+    color: white;
+    background: rgb(60, 0, 137);
+    margin: 0px 1px;
+    padding: 5px;
+    color: white;
+ }
+
+div#countdown div span {
+    font-size: 2em;   
+ }
