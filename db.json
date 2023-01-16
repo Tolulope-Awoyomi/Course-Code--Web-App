@@ -27,6 +27,20 @@
             "description":"It is an updated and enhanced version of the C coding language. It included object-orientation to C, hence the reason it is called C++. Majority of computer games are written in this language.",
             "duration": "3 months",
             "tuition": "$1800"
-        }
+        },
+        {
+            "name": "Ruby",
+            "image": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGxlYXJuJTIwcnVieXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "description": "A high level coding language that is quite fun to write! It is popularly known through the Ruby on Rails framework.",
+            "duration": "3 months",
+            "tuition": "$1600"
+       },
+       {
+           "name": "SQL",
+           "image": "https://media.istockphoto.com/id/185085453/photo/sql-wooden-mannequin-demonstrating-this-word.jpg?b=1&s=170667a&w=0&k=20&c=S3QZ7k3fYT_f803UybhqaGMuOaqYAHbDhePQSsw8oPQ=",
+           "description": "SQL is the acronym for 'Structured Query Language'. It is used to insert data into a database, and interact with such data. SQL 'codes' are called 'queries'. With the queries, one can create, read, update, view, and delete data in the database.",
+           "duration": "3 months",
+           "tuition": "$1800"
+       }
     ]
 }
