@@ -116,3 +116,36 @@ div#currentTime span {
     display: block;
     width: 100%;
  }
+
+
+/* Article Styles */
+article { 
+    background: white;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap; 
+ }
+ 
+article section {
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+ }
+ 
+section h1 {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px;
+    color: rgb(60, 0, 137)
+ }
+
+section h2 {
+   font-size: 1.0em;
+   text-align: center;
+   margin: 7px;
+   color: rgb(60, 0, 137)
+}
+ 
+section p, form {
+    margin: 20px;
+ }
