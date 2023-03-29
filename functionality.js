@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let courses = []
 
 function attachSubmitForSearch() {
+    const form = document.getElementById("searchClasses")
     form.addEventListener("submit", (e) => {
         e.preventDefault()
 
