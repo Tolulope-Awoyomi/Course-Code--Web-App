@@ -2,29 +2,54 @@
 function fetchData () {
     fetch ("http://localhost:3000/courses")
     .then (res => res.json())
-    .then (courses => {
-        const coursesBody = courses.map(courses => {
-            return `
-            <div class="courses"
-                <p> <img src="${courses.image}" alt="${courses.name}" /></p>
-                <p id="courses"> <b> Course: ${courses.name.toUpperCase()} </b> </p>
-                <p> Description: ${courses.description} </p>
-                <p> <i> Duration: ${courses.duration} </i> </p>
-                <p> <b> Tuition: ${courses.tuition} </b> </p>
-                <br>
-                <br>
-            </div>
-            `
-        })
-        .join("");
-
-        document.querySelector("#courseList").insertAdjacentHTML("beforeend", coursesBody);
+    .then (data => {
+        listCourses(data)
     })
     .catch(error => {
         console.log(error)
     });
 }
 fetchData()
+
+function listCourses (courses) {
+    courses.forEach(course => displayEachCourse(course))
+}
+
+function displayEachCourse(classes) {
+    const ul = document.getElementById("courseList")
+    const li = document.createElement("li")
+    const name = document.createElement("p")
+    const image = document.createElement("p")
+    const description = document.createElement("p")
+    const duration = document.createElement("p")
+    const tuition = document.createElement("p")
+
+    const p = document.createElement("button")
+    button.innerText = "like"
+    let count = 0
+    button.addEventListener("click", () => {
+        count++
+        p.innerText = `This button has been clicked ${count} times`
+    })
+
+    name.innerText = `Course: ${classes.name}`
+    image.innerText = `${classes.image}`
+    description.innerText = ` Description: ${classes.description}`
+    duration.innerText = `Duration: ${classes.duration}`
+    tuition.innerText = `Tuition: ${classes.tuition} `
+
+
+    li.appendChild(name)
+    li.appendChild(image)
+    li.appendChild(description)
+    li.appendChild(duration)
+    li.appendChild(tuition)
+
+    li.appendChild(button)
+    li.appendChild(p)
+
+    ul.appendChild(li)
+}
 
 
 // Add two event listeners to the register and input forms 
