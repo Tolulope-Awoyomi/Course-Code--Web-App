@@ -1,9 +1,9 @@
-//Create a function to fetch and dislay data
 document.addEventListener("DOMContentLoaded", () => {
     fetchData()
 })
 
-let courses = []
+let courses = [] 
+
 
 function attachSubmitForSearch() {
     const form = document.getElementById("searchClasses")
@@ -18,20 +18,14 @@ function attachSubmitForSearch() {
     })
 }
 
-function fetchData () {
-    fetch ("http://localhost:3000/courses")
-    .then (res => res.json())
-    .then (data => {
-        courses = data
-        listCourses(data)
-    })
-    .catch(error => {
-        console.log(error)
-    });
-
-    attachSubmitForSearch()
+function fetchData() {
+    fetch("http://localhost:3000/courses")
+        .then(resp => resp.json())
+        .then(data => {
+            courses = data
+            listCourses(data)})
+            attachSubmitForSearch()
 }
-
 
 function listCourses (courses) {
     document.getElementById("courseList").innerHTML = ""
@@ -47,19 +41,22 @@ function displayEachCourse(classes) {
     const duration = document.createElement("p")
     const tuition = document.createElement("p")
 
-    const p = document.createElement("button")
+    const p = document.createElement("p")
+
+    const button = document.createElement("button")
     button.innerText = "like"
     let count = 0
     button.addEventListener("click", () => {
         count++
-        p.innerText = `This button has been clicked ${count} times`
+        console.log(p.innerText = `This button has been clicked ${count} time(s)`)
+        
     })
 
-    name.innerText = `Course: ${classes.name}`
+    name.innerText = `COURSE: ${classes.name}`
     image.innerText = `${classes.image}`
-    description.innerText = ` Description: ${classes.description}`
-    duration.innerText = `Duration: ${classes.duration}`
-    tuition.innerText = `Tuition: ${classes.tuition} `
+    description.innerText = ` DESCRIPTION: ${classes.description}`
+    duration.innerText = `DURATION: ${classes.duration}`
+    tuition.innerText = `TUITION: ${classes.tuition} `
 
 
     li.appendChild(name)
@@ -73,6 +70,7 @@ function displayEachCourse(classes) {
 
     ul.appendChild(li)
 }
+
 
 
 // Add two event listeners to the register and input forms 
