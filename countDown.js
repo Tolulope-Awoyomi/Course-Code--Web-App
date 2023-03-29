@@ -1,4 +1,4 @@
-const deadline = new Date('3/31/2023 10:01 AM');
+const deadline = new Date('4/30/2023 10:01 AM');
         
     const dSecond = 1000;
     const dMinute = dSecond * 60;
@@ -6,10 +6,10 @@ const deadline = new Date('3/31/2023 10:01 AM');
     const dDay = dHour * 24;
     let timer;
 
-/* Function to find 31st March, 2023 */
+/* Function to find 30th April, 2023 */
 function showRemaining() {
 
-    /* Subtract March 31st, 2023; 10:01 am from the current date */
+    /* Subtract April 30, 2023; 10:01 am from the current date */
     const currentDate = new Date();
     const difference = deadline - currentDate;
     if (difference < 0) {
@@ -18,7 +18,7 @@ function showRemaining() {
         return;
     }
 
-    /* Calculate the days, hours, minutes, and seconds until 31st March, 2023 */
+    /* Calculate the days, hours, minutes, and seconds until 30th April, 2023 */
     const days = Math.floor(difference / dDay);
     const hours = Math.floor((difference % dDay) / dHour);
     const minutes = Math.floor((difference % dHour) / dMinute);
@@ -31,7 +31,7 @@ function showRemaining() {
     /* Display the current date and time */
     document.getElementById("currentTime").innerHTML = localDate + "<br />" + localTime;
 
-    /* Display the time left until March 31st, 2023; 10:01 am */
+    /* Display the time left until April 30th, 2023; 10:01 am */
     document.getElementById('daysLeft').innerHTML = days + 'days ';
     document.getElementById('hoursLeft').innerHTML = hours + 'hours ';
     document.getElementById('minsLeft').innerHTML = minutes + 'mins ';
