@@ -36,7 +36,7 @@ function displayEachCourse(classes) {
     const ul = document.getElementById("courseList")
     const li = document.createElement("li")
     const name = document.createElement("p")
-    const image = document.createElement("p")
+    const image = document.createElement("img")
     const description = document.createElement("p")
     const duration = document.createElement("p")
     const tuition = document.createElement("p")
@@ -53,7 +53,7 @@ function displayEachCourse(classes) {
     })
 
     name.innerText = `COURSE: ${classes.name}`
-    image.innerText = `${classes.image}`
+    image.src = `${classes.image}`
     description.innerText = ` DESCRIPTION: ${classes.description}`
     duration.innerText = `DURATION: ${classes.duration}`
     tuition.innerText = `TUITION: ${classes.tuition} `
