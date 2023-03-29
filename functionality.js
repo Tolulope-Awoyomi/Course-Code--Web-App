@@ -1,4 +1,8 @@
 //Create a function to fetch and dislay data
+document.addEventListener("DOMContentLoaded", () => {
+    fetchData()
+})
+
 function fetchData () {
     fetch ("http://localhost:3000/courses")
     .then (res => res.json())
@@ -9,7 +13,7 @@ function fetchData () {
         console.log(error)
     });
 }
-fetchData()
+
 
 function listCourses (courses) {
     courses.forEach(course => displayEachCourse(course))
