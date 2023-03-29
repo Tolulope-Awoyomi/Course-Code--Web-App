@@ -45,9 +45,12 @@ There are five files and an image:
 * As a user, I should see the current date and time at the top right corner of the web app.
 * As a user, I should see the countdown clock to when classes begin. 
 * As a user, I should be able to type my name, phone number, and email into their respective input fields.
-* As a user, I should be able to select a course I am interested in learning, among a variety of options.
 * As a user, after inputing my details, I should be able to click a register button.
-* As a user, I expect to see the name, description, duration and tuition of the courses provided.  
+* As a user, I should be able to search for a course using the search bar.
+* As a user, after searching for a course, if the course is available, I should be able to see only that course show up. 
+* As a user, I should be able to select a course I am interested in learning, among a variety of options.
+* As a user, I should be able to click on the like button after each course.
+* As a user, after clicking on the like button, I should be able to see the number of times I clicked the button. 
 * As a user, I should be able to input a review, if I wish to.
 * As a user, I should be able to click on a submit button after inputing my review.
 * As a user, I expect to see my review appear after I click the submit button.
