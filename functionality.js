@@ -3,19 +3,37 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchData()
 })
 
+let courses = []
+
+function attachSubmitForSearch() {
+    form.addEventListener("submit", (e) => {
+        e.preventDefault()
+
+        const term = document.getElementById("searches").value
+        const filteredArray = courses.filter(course => course.name.toLowerCase().includes(term.toLowerCase()))
+        listCourses(filteredArray)
+
+        form.reset()
+    })
+}
+
 function fetchData () {
     fetch ("http://localhost:3000/courses")
     .then (res => res.json())
     .then (data => {
+        courses = data
         listCourses(data)
     })
     .catch(error => {
         console.log(error)
     });
+
+    attachSubmitForSearch()
 }
 
 
 function listCourses (courses) {
+    document.getElementById("courseList").innerHTML = ""
     courses.forEach(course => displayEachCourse(course))
 }
 
